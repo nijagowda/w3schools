@@ -16,7 +16,7 @@ function light(sw) {
   document.getElementById('img').src = pic;
 }
 
-var lightState = 0;
+var lightState = 0; // Modified
 setInterval(function() {
   light(lightState);
   lightState = 1 - lightState; // Toggle between 0 and 1
