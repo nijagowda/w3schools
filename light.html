@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First JavaScript</h1>
+<p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "img/light_off.jpg";
+  } else {
+    pic = "img/light_on.jpg";
+  }
+  document.getElementById('img').src = pic;
+}
+
+var lightState = 0;
+setInterval(function() {
+  light(lightState);
+  lightState = 1 - lightState; // Toggle between 0 and 1
+}, 1000);
+</script>
+
+<img id="img" src="img/light_off.jpg" width="100" height="180">
+
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First JavaScript</h1>
+<p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "img/light off.jpeg"
+  } else {
+    pic = "img/light on.jpeg"
+  }
+  document.getElementById('img').src = pic;
+}
+</script>
+
+<img id="img" src="img/light off.jpeg" width="100" height="180">
+
+<p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p>
+
+
+
+</body>
+</html>
+ -->

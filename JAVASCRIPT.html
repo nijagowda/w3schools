@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First JavaScript</h1>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+<p id="style">JavaScript can change the style of an HTML element.</p>
+<script>
+    function myFunction() {
+  document.getElementById("style").style.fontSize = "25px"; 
+  document.getElementById("style").style.color = "red";
+  document.getElementById("style").style.backgroundColor = "yellow";        
+}
+</script>
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+</body>
+</html> 
+
